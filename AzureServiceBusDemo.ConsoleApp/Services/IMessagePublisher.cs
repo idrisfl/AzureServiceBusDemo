@@ -10,6 +10,8 @@ namespace AzureServiceBusDemo.ConsoleApp.Services
 
         public Task Publish<T>(T obj);
 
+        public Task PublishMessages<T>(IEnumerable<T> items);
+
         public Task Publish(string raw);
     }
 }
